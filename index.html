@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ru.js"></script>
+
+    <title>РумТибет</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="header__nav">
+                <a class="header__logo" href="#">
+                    <img class="header__logo-img" src="./assets/img/logo.svg" alt="logo">
+                </a>
+                <ul class="header__nav-list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Про гида</a></li>
+                    <li><a href="#">Программа тура</a></li>
+                    <li><a href="#">Стоимость</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <button class="header__btn btn-default">Консультация</button>
+                <div class="header__gamburger">
+                    <div class="gamburger-menu-btn"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero__section">
+                <h1 class="hero__section-title">
+                    Насладись прогулкой в горах<br>
+                    с командой единомышленников
+                </h1>
+                <button class="hero__form-mob-button">Найти программу</button>
+                <form class="hero__form">
+                    <div class="hero__form-item" id="tour">
+                        <select id="location" name="location">
+                            <option value="">Локация для тура</option>
+                            <option value="Кайлас">Кайлас</option>
+                            <option value="Намча-Барва">Намча-Барва</option>
+                            <option value="Гьюалапкангри">Гьюалапкангри</option>
+                            <option value="Чомолунгма">Чомолунгма</option>
+                            <option value="Гангринпоче">Гангринпоче</option>
+                            <option value="Шишапангма">Шишапангма</option>
+                        </select>
+                        <label for="location">выберите из списка</label>
+                    </div>
+                    <div class="hero__form-item" >
+                        <input id="dateRange" type="text"  placeholder="Дата похода">
+                        <label>укажите диапазон</label>
+                    </div>
+                    <div class="hero__form-item" id="input-users">
+                        <select id="participant" name="participant">
+                            <option value="">Участники</option>
+                            <option value="Минск">1 участник</option>
+                            <option value="Гродно">2 участника</option>
+                            <option value="Брест">3 участника</option>
+                            <option value="Брест">4 участника</option>
+                        </select>
+                        <label for="participant">минимум 4 человека</label></div>
+                    <div class="hero__form-item">
+                        <button class="hero__form-button">Найти программу</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="features__content-box">
+                <div class="features__left-column">
+                    <div class="features__image-gora"></div>
+                    <div class="features__wrapper_img" id="videoWrapper">
+                        <div class="features__image-les">
+                            <a href="#" id="playVideo">
+                                <div class="play-img"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="features__right-column">
+                    <p class="features__subtittle subtittle">о нашем походе</p>
+                    <h2 class="features__title">Исследуйте все горные массивы мира вместе с нами</h2>
+                    <p class="features__text">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</p>
+                    <button class="features__btn btn-default">Программа тура</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery__content-box">
+                <h2 class="gallery__title">Делимся впечатлениями</h2>
+                <div class="gallery__image-gallery">
+                    <div class="image-grid">
+                        <div class="gallery__image-grid-item item1" data-image="./assets/img/gallary__item1.jpg"></div>
+                        <div class="gallery__image-grid-item item2" data-image="./assets/img/gallary__item2.jpg"></div>
+                        <div class="gallery__image-grid-item item3" data-image="./assets/img/gallary__item3.jpg"></div>
+                        <div class="gallery__image-grid-item item4" data-image="./assets/img/gallary__item4.jpg"></div>
+                        <div class="gallery__image-grid-item item5" data-image="./assets/img/gallary__item5.jpg"></div>
+                        <div class="gallery__image-grid-item item6" data-image="./assets/img/gallary__item6.jpg"></div>
+                    </div>
+                    <button class="gallery__btn btn-default margin-center">Наш pinterest</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content-box">
+                <div class="cta__left-colum">
+                    <p class="cta__subtittle subtittle">актуально</p>
+                    <h2 class="features__title tittle">Получайте полезные рассылки о путешествиях</h2>
+                    <p class="cta__subtittle-mob subtittle">фото-отчет</p>
+                    <h2 class="features__title-mob tittle">Делимся впечатлениями</h2>
+                </div>
+                <div class="cta__right-colum">
+                    <form class="cta__form" id="form-email">
+                        <p class="cta__form-email-text">Введите e-mail адрес</p>
+                        <div class="cta__email-box">
+                            <input id="emailInput" class="cta__input" type="text" placeholder="name@domain.com">
+                            <button class="cta__btn btn-default">Подписаться на новости</button>
+                        </div>
+                        <p class="cta__error-msg" id="emailError"></p>
+                        <p class="cta__form-text">подписываясь на новости, вы автоматически соглашаетесь с <a href="#">условиями обработки персональных данных</a> и <a href="#">правилами рекламных рассылок</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__row_one">
+            <div class="container">
+
+                <div class="footer__column-wrapper">
+                    <div class="footer__column">
+                        <p class="footer_tittle">Компания «РумТибет»</p>
+                        <p class="footer__text footer__margin-text">
+                            Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
+                            Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.
+                        </p>
+                        <div class="footer__contact-box">
+                            <a href="mailto:info@domain.com" class="footer__text">info@domain.com</a>
+                            <a href="tel:+71234567890" class="footer__text-two">+7 (123) 456-78-90</a>
+                        </div>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link telegram"></a>
+                            <a href="#" class="footer__social-link vk"></a>
+                            <a href="#" class="footer__social-link pinterest"></a>
+                            <a href="#" class="footer__social-link skype"></a>
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                    <p class="footer_tittle">Наши услуги</p>
+                    <div class="footer__text-link-menu">
+                        <div class="arrow-link"></div>
+                        <a href="#" class="footer__text">Прогулки в горы летом</a>
+                    </div>
+                    <div class="footer__text-link-menu">
+                        <div class="arrow-link"></div>
+                        <a href="#" class="footer__text">Зимние походы в горы</a>
+                    </div>
+                    <div class="footer__text-link-menu">
+                        <div class="arrow-link"></div>
+                        <a href="#" class="footer__text">Посещение храмов в горах</a>
+                    </div>
+                    <div class="footer__text-link-menu">
+                        <div class="arrow-link"></div>
+                        <a href="#" class="footer__text">Экстремальные виды туризма</a>
+                    </div>
+                    <div class="footer__text-link-menu">
+                        <div class="arrow-link"></div>
+                        <a href="#" class="footer__text">Походы в джунглях Амазонии</a>
+                        <div class="footer__new-icon">NEW</div>
+                    </div>
+                    <div class="footer__text-link-menu">
+                        <div class="arrow-link"></div>
+                        <a href="#" class="footer__text">Поездка в Африку</a>
+                    </div>
+                </div>
+                    <div class="footer__column">
+                    <p class="footer_tittle">Важно для путешествий</p>
+                    <div class="footer__text-link-menu">
+                        <div class="arrow-link"></div>
+                        <a href="#" class="footer__text">Как собрать в долгий поход?</a>
+                    </div>
+                    <div class="footer__text-link-menu">
+                        <div class="arrow-link"></div>
+                        <a href="#" class="footer__text">Жизненно важные предметы для похода</a>
+                    </div>
+                    <div class="footer__text-link-menu">
+                        <div class="arrow-link"></div>
+                        <a href="#" class="footer__text">Медицинская страховка, гарантии безопасности</a>
+                    </div>
+                    <div class="footer__text-link-menu">
+                        <div class="arrow-link"></div>
+                            <a href="#" class="footer__text">Если вы врач - загляните сюда</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__row_two">
+            <div class="container">
+                <a href="#" class="footer__text-two">Политика обработки персональных данных</a>
+            </div>
+        </div>
+    </footer>
+    <div class="gamburger-menu-popup">
+            <div class="gamburger-menu-popup__close">
+                <span class="gamburger-menu-popup__line"></span>
+                <span class="gamburger-menu-popup__line"></span>
+            </div>
+            <div class="gamburger-menu-popup__text-link-menu">
+                <div class="arrow-link"></div>
+                <a href="#" class="gamburger-menu-popup__text">Поездка в Африку</a>
+            </div>
+            <div class="gamburger-menu-popup__text-link-menu">
+                <div class="arrow-link"></div>
+                <a href="#" class="gamburger-menu-popup__text">Программа тура</a>
+            </div>
+            <div class="gamburger-menu-popup__text-link-menu">
+                <div class="arrow-link"></div>
+                <a href="#" class="gamburger-menu-popup__text">Стоимость</a>
+            </div>
+            <div class="gamburger-menu-popup__text-link-menu">
+                <div class="arrow-link"></div>
+                <a href="#" class="gamburger-menu-popup__text">Блог</a>
+            </div>
+            <div class="gamburger-menu-popup__text-link-menu">
+                <div class="arrow-link"></div>
+                <a href="#" class="gamburger-menu-popup__text">Контакты</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

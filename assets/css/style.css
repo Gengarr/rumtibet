@@ -1,0 +1,232 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "NEXT ART";
+  src: url("../fonts/NEXT_ART_Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NEXT ART";
+  src: url("../fonts/NEXT_ART_Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NEXT ART";
+  src: url("../fonts/NEXT_ART_SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NEXT ART";
+  src: url("../fonts/NEXT_ART_Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NEXT ART";
+  src: url("../fonts/NEXT_ART_Heavy.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+body {
+  font-family: " Nunito Sans", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-family: "NEXT ART", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 150%;
+}
+
+.button, input, optgroup, select, textarea {
+  padding: 14px 16px 14px 16px;
+  border-radius: 8px;
+  color: #FDFDFD;
+  border: 1px solid #E1E3E4;
+  background-color: transparent;
+  background-position: right 16px center;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: 1px solid #E1E3E4;
+  color: #FDFDFD;
+  padding: 14px 40px 14px 16px; /* справа больше места под стрелку */
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-default {
+  width: 157px;
+  height: 44px;
+  background-color: #1A3E3E;
+  cursor: pointer;
+  color: #FDFDFD;
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-default:hover {
+  scale: 1.3;
+  transition: 0.3s;
+}
+
+.btn-default:focus {
+  scale: 1;
+  background-color: #FDFDFD;
+  color: #1A3E3E;
+  transition: 0.3s;
+}
+
+.header {
+  margin-top: 16px;
+}
+.header .container .header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .header__nav .header__nav-list {
+  display: flex;
+  gap: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+.header .container .header__nav .header__nav-list li {
+  text-decoration: none;
+  list-style: none;
+  transition: 0.3s;
+}
+.header .container .header__nav .header__nav-list li a {
+  color: #FDFDFD;
+  text-decoration: none;
+}
+.header .container .header__nav .header__nav-list li:hover {
+  scale: 1.2;
+  color: #1A3E3E;
+}
+.header .container .header__nav .header__nav-list a:hover {
+  text-decoration: #1A3E3E;
+}
+
+.hero {
+  background-image: url("/assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.hero .container .hero__section .hero__section-title {
+  color: #FDFDFD;
+  margin-bottom: 41px;
+}
+.hero .container .hero__section .hero__form {
+  display: flex;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 43px 40px 42px 40px;
+  margin-bottom: 82px;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  backdrop-filter: blur(6px);
+}
+.hero .container .hero__section .hero__form .hero__form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  width: 270px;
+  position: relative;
+}
+.hero .container .hero__section .hero__form #tour:after, .hero .container .hero__section .hero__form #input-users:after {
+  content: "";
+  background-image: url("../img/icons/arrow-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 16px;
+  top: 24px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #FDFDFD;
+  font-size: 12px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+}
+.hero .container .hero__section .hero__form .hero__form-item input::placeholder {
+  color: #FDFDFD;
+  opacity: 1; /* чтобы не был полупрозрачным */
+}
+.hero .container .hero__section .hero__form #dateRange:after {
+  content: "";
+  background-image: url("../img/icons/date.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 16px;
+  top: 24px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #FDFDFD;
+  font-size: 12px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+}
+.hero .container .hero__section .hero__form .hero__form-button {
+  height: 52px;
+  background-color: #FDFDFD;
+  padding: 16px 36px 16px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: none;
+  width: 213px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 22px;
+}
+.hero .container .hero__section .hero__form .hero__form-button:hover {
+  background-color: #1A3E3E;
+  color: #FDFDFD;
+  transition: 0.3s;
+}
+.hero .container .hero__section .hero__form .hero__form-button:focus {
+  scale: 1;
+  background-color: #1A3E3E;
+  color: #FDFDFD;
+  transition: 0.3s;
+}
+.hero .container .hero__section .hero__form label {
+  color: #FDFDFD;
+  padding: 0 8px 0 8px;
+}
+
+.pres {
+  background-color: green;
+}

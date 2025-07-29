@@ -1,0 +1,264 @@
+body {
+  font-family: ' Nunito Sans', sans-serif;
+  font-weight: 400; // Regular;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  font-family: "NEXT ART", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 150%;
+}
+.button, input, optgroup, select, textarea {
+  padding: 14px 16px 14px 16px;
+  border-radius: 8px;
+  color: #FDFDFD;
+  border: 1px solid #E1E3E4;
+  background-color: transparent;
+  background-position: right 16px center;
+
+}
+
+.flatpickr-input {
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: transparent;
+  border: 1px solid #E1E3E4;
+  color: #FDFDFD;
+  padding: 14px 40px 14px 16px;
+  border-radius: 8px;
+
+  position: relative;
+  z-index: 1;
+}
+.btn-default {
+
+  height: 44px;
+  background-color:#1A3E3E;
+  cursor: pointer;
+  color: #FDFDFD;
+  border: none;
+  border-radius: 4px;
+  transition: .3s;
+  padding: 12px 24px 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.btn-default:hover {
+  scale: 1.3;
+  transition: .3s;
+}
+.btn-default:focus {
+  scale: 1;
+  background-color:#FDFDFD;
+  color: #1A3E3E;
+  transition: .3s;
+}
+.features__image-les {
+  height: 400px;
+  width: 350px;
+  background-image: url("../img/les.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 130px;
+  top: 126px;
+  border-radius: 30px;
+}
+.features__image-gora {
+  height: 400px;
+  width: 350px;
+  background-image: url("../img/gora.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+
+.item1 {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+  background-image: url("../img/gallary__item1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.item2 {
+  grid-column: 4 / span 2;
+  grid-row: 1;
+  background-image: url("../img/gallary__item2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.item3 {
+  grid-column: 6;
+  grid-row: 1;
+  background-image: url("../img/gallary__item3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+/* Три нижних */
+.item4 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  background-image: url("../img/gallary__item4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.item5 {
+  grid-column: 3 / span 3;
+  grid-row: 2;
+  background-image: url("../img/gallary__item5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.item6 {
+  grid-column: 6;
+  grid-row: 2;
+  background-image: url("../img/gallary__item6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.margin-center {
+  margin-left: 45%;
+  margin-right: 50%;
+}
+.subtittle {
+  color: #F2BE22;
+  font-family: " Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.title {
+  color: #18121E;
+  font-family: " Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+.cta__input {
+  font-size: 14px;
+  line-height:  20px;
+  color: #000;
+  width: 280px;
+}
+.cta__form-text a{
+  color: #18121E;
+}
+/* Красная рамка при ошибке */
+.cta__input.error {
+  border: 2px solid #ff4d4f;
+}
+
+/* Сообщение об ошибке */
+.cta__error-msg {
+  color: #ff4d4f;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.arrow-link {
+  background-image: url("../img/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  rotate: -90deg;
+  height: 20px;
+  width: 20px;
+}
+.footer__social-link {
+  width: 32px;
+  height: 32px;
+}
+.telegram {
+  background-image: url("../img/icons/telegram.svg");
+}
+.vk {
+  background-image: url("../img/icons/vk.svg");
+}
+.pinterest {
+  background-image: url("../img/icons/pinterest.svg");
+}
+.skype {
+  background-image: url("../img/icons/skype.svg");
+}
+.footer__margin-text {
+  padding-bottom: 40px;
+}
+//стили лайбокса картинок
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px; right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.lightbox-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.lightbox-arrow.left {
+  left: 30px;
+}
+
+.lightbox-arrow.right {
+  right: 30px;
+}
+//
